@@ -1,0 +1,54 @@
+name: expense_tracker
+description: "A new Flutter project."
+
+publish_to: 'none'  # Prevent accidental publishing to pub.dev.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  provider: ^6.0.4  # State management solution.
+  postgres: ^2.6.2  # PostgreSQL database integration.
+  path_provider: ^2.0.11  # File storage location provider for caching.  # Chart library for visualizations such as bar and pie charts.
+
+  cupertino_icons: ^1.0.8  # iOS styled icons (default for Cupertino widgets).
+  syncfusion_flutter_charts: ^27.2.2
+  table_calendar: ^3.1.2
+  csv: ^6.0.0
+  file_picker: ^8.1.4
+  
+  # You can add any other packages as per your requirements.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  flutter_lints: ^4.0.0  # Linting package to improve code quality.
+  
+flutter:
+  uses-material-design: true  # Material Design components for your app.
+
+  # If you use assets in your app, such as images, you can add them here.
+  assets:
+    - assets/produit.csv
+
+  # If you plan to use custom fonts, add the font entries here.
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details on using assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package.
